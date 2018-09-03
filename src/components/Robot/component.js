@@ -19,10 +19,6 @@ export default class Robot extends Component {
     this.robotRef = React.createRef();
   }
 
-  componentWillMount() {
-    console.log(this.containerRef);
-  }
-
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value, report: false });
   }
